@@ -80,12 +80,5 @@
     "clean": "gatsby clean",
     "test": "jest -i -u --coverage",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
-  },
-  "bugs": {
-    "url": "https://github.com/rahuldkjain/github-profile-readme-generator/issues"
   }
 }
