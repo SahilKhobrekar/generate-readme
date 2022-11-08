@@ -24,7 +24,7 @@ const Header = (props) => {
 
   const fetchData = async () => {
     if (shouldRequestStats()) {
-      const response = await axios.get('https://api.github.com/repos/rahuldkjain/github-profile-readme-generator');
+      const response = await axios.get('https://github.com/SahilKhobrekar/generate-readme');
 
       const { stargazers_count: stargazersCount, forks_count: forksCount } = response.data;
 
@@ -62,7 +62,7 @@ const Header = (props) => {
       </Link>
       <div className="flex justify-center items-center">
         <a
-          href="https://github.com/SahilKhobrekar"
+          href="https://github.com/SahilKhobrekar/generate-readme"
           aria-label="Star sahil-khobrekar/github-profile-readme-generator on GitHub"
           target="blank"
           className="mr-2"
@@ -70,18 +70,18 @@ const Header = (props) => {
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <StarIcon size={16} id="star-icon" className="px-1 w-6 star" />
             Star this repo
-            {/* <span className="github-count px-1 sm:px-2">{stats.starsCount}</span> */}
+            {<span className="github-count px-1 sm:px-2">{stats.starsCount}</span>}
           </div>
         </a>
         <a
-          href="https://github.com/SahilKhobrekar"
+          href="https://github.com/SahilKhobrekar/generate-readme"
           aria-label="Fork sahil-khobrekar/github-profile-readme-generator on GitHub"
           target="blank"
         >
           <div className="text-xxs sm:text-sm border-2 border-solid border-gray-900 bg-gray-100 flex items-center justify-center py-1 px-2">
             <RepoForkedIcon size={16} id="fork-icon" className="px-1 w-6 fork" />
             Fork on GitHub
-            {/* <span className="github-count px-1 sm:px-2">{stats.forksCount}</span> */}
+            {<span className="github-count px-1 sm:px-2">{stats.forksCount}</span>}
           </div>
         </a>
       </div>
