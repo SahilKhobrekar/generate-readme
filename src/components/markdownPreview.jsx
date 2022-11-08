@@ -423,43 +423,43 @@ SkillsPreview.propTypes = {
   skills: PropTypes.array.isRequired,
 };
 
-export const SupportPreview = (props) => {
-  const { support } = props;
-  let viewSupport = false;
-  Object.keys(support).forEach((key) => {
-    if (support[key]) {
-      viewSupport = true;
-    }
-  });
-  return support.buyMeACoffee || support.buyMeAKofi ? (
-    <div className="flex flex-wrap justify-start items-center">
-      <SectionTitle label="Support:" visible={viewSupport} />
-      {support.buyMeACoffee && (
-        <a href={`https://www.buymeacoffee.com/${support.buyMeACoffee}`} target="_blank" rel="noreferrer">
-          <img
-            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-            alt="Buy Me A Coffee"
-            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
-          />
-        </a>
-      )}
-      {support.buyMeAKofi && (
-        <a href={`https://ko-fi.com/${support.buyMeAKofi}`} target="_blank" rel="noreferrer">
-          <img
-            src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
-            alt="Buy Me A Ko-fi"
-            className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
-          />
-        </a>
-      )}
-    </div>
-  ) : (
-    ''
-  );
-};
-SupportPreview.propTypes = {
-  support: PropTypes.object.isRequired,
-};
+// export const SupportPreview = (props) => {
+//   const { support } = props;
+//   let viewSupport = false;
+//   Object.keys(support).forEach((key) => {
+//     if (support[key]) {
+//       viewSupport = true;
+//     }
+//   });
+//   return support.buyMeACoffee || support.buyMeAKofi ? (
+//     <div className="flex flex-wrap justify-start items-center">
+//       <SectionTitle label="Support:" visible={viewSupport} />
+//       {support.buyMeACoffee && (
+//         <a href={`https://www.buymeacoffee.com/${support.buyMeACoffee}`} target="_blank" rel="noreferrer">
+//           <img
+//             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+//             alt="Buy Me A Coffee"
+//             className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+//           />
+//         </a>
+//       )}
+//       {support.buyMeAKofi && (
+//         <a href={`https://ko-fi.com/${support.buyMeAKofi}`} target="_blank" rel="noreferrer">
+//           <img
+//             src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3"
+//             alt="Buy Me A Ko-fi"
+//             className="mb-4 mr-4 w-36 h-8 sm:w-52 sm:h-12"
+//           />
+//         </a>
+//       )}
+//     </div>
+//   ) : (
+//     ''
+//   );
+// };
+// SupportPreview.propTypes = {
+//   support: PropTypes.object.isRequired,
+// };
 
 const MarkdownPreview = (props) => {
   const { prefix, data, social, skills, support } = props;
@@ -481,7 +481,7 @@ const MarkdownPreview = (props) => {
       <WorkPreview work={props} />
       <SocialPreview social={social} />
       <SkillsPreview skills={skills} />
-      <SupportPreview support={support} />
+      {/* <SupportPreview support={support} /> */}
       <div className="block sm:flex sm:justify-center sm:items-start">
         <TopLanguagesPreview show={data.topLanguages} github={social.github} options={data.topLanguagesOptions} />
         <GitHubStatsPreview show={data.githubStats} github={social.github} options={data.githubStatsOptions} />
@@ -497,7 +497,7 @@ MarkdownPreview.defaultProps = {
   prefix: DEFAULT_PREFIX,
   data: DEFAULT_DATA,
   social: DEFAULT_SOCIAL,
-  support: DEFAULT_SUPPORT,
+  // support: DEFAULT_SUPPORT,
   skills: [],
 };
 
@@ -506,5 +506,5 @@ MarkdownPreview.propTypes = {
   data: PropTypes.object,
   social: PropTypes.object,
   skills: PropTypes.object,
-  support: PropTypes.object,
+  // support: PropTypes.object,
 };

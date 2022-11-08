@@ -92,6 +92,6 @@ export const DEFAULT_SOCIAL = {
   rssurl: '',
 };
 
-export const DEFAULT_SUPPORT = {
-  buyMeACoffee: '',
-};
+// export const DEFAULT_SUPPORT = {
+//   buyMeACoffee: '',
+// };

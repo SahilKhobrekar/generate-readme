@@ -20,7 +20,7 @@ const Footer = () => (
         </h1>
       </div>
       <div className="text-xl sm:text-base font-light sm:font-normal">
-        <div className="font-title font-bold mb-4 sm:mb-2">
+        {/* <div className="font-title font-bold mb-4 sm:mb-2">
           <strong>Pages</strong>
         </div>
         <div className="ml-2 sm:ml-0">
@@ -32,14 +32,14 @@ const Footer = () => (
           <Link to={links.support} activeStyle={{ color: '#002ead' }}>
             Support
           </Link>
-        </div>
+        </div> */}
         <div className="ml-2 sm:ml-0">
           <Link to={links.about} activeStyle={{ color: '#002ead' }}>
             About
           </Link>
         </div>
       </div>
-      <div className="text-xl sm:text-base font-light sm:font-normal">
+      {/* <div className="text-xl sm:text-base font-light sm:font-normal">
         <div className="font-title font-bold my-4 sm:my-0 sm:mb-2">
           <strong>More</strong>
         </div>
@@ -79,8 +79,8 @@ const Footer = () => (
             Pull Requests
           </a>
         </div>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <div className="font-title font-bold text-xl sm:text-base my-4 sm:my-0 sm:mb-2">
           <strong>Join Community</strong>
         </div>
@@ -89,13 +89,13 @@ const Footer = () => (
             <img src={discord} className="h-12" alt="Discord of the community" />
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
     <div className="py-2 mt-2">
-      Developed in India{' '}
-      <span role="img" aria-label="india">
+      Developed by SMVS{' '}
+      <span role="img" aria-label="smvs">
         {' '}
-        🇮🇳
+        💛
       </span>
     </div>
   </div>

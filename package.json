@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
   "version": "1.2.0",
-  "author": "Rahul Jain <rahuldkjain@gmail.com>",
+  "author": "Sahil Khobrekar<sahilkhobrekar@gmail.com>",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

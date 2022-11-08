@@ -18,7 +18,7 @@ import Social from '../components/social';
 import Addons from '../components/addons';
 import Skills from '../components/skills';
 import Donate from '../components/donate';
-import Support from '../components/support';
+// import Support from '../components/support';
 import { initialSkillState } from '../constants/skills';
 import Loader from '../components/loader';
 import SEO from '../components/seo';
@@ -37,7 +37,7 @@ const KeepCacheUpdated = ({ prefix, data, link, social, skills, support }) => {
         link,
         social,
         skills,
-        support,
+        // support,
       }),
     );
   }, [prefix, data, link, social, skills, support]);
@@ -347,7 +347,7 @@ const IndexPage = () => {
   }, []);
 
   // keep cache updated
-  KeepCacheUpdated({ prefix, data, link, social, skills, support });
+  KeepCacheUpdated({ prefix, data, link, social, skills }); //,support
 
   const handleResetForm = () => {
     setPrefix(DEFAULT_PREFIX);
@@ -355,7 +355,7 @@ const IndexPage = () => {
     setLink(DEFAULT_LINK);
     setSocial(DEFAULT_SOCIAL);
     setSkills(DEFAULT_SKILLS);
-    setSupport(DEFAULT_SUPPORT);
+    // setSupport(DEFAULT_SUPPORT);
   };
 
   const handleRestore = () => {
@@ -370,7 +370,7 @@ const IndexPage = () => {
       setData(restoreData.data || DEFAULT_DATA);
       setLink(restoreData.link || DEFAULT_LINK);
       setSocial(restoreData.social || DEFAULT_SOCIAL);
-      setSupport(restoreData.support || DEFAULT_SUPPORT);
+      // setSupport(restoreData.support || DEFAULT_SUPPORT);
 
       const restoreDataSkills = mergeDefaultWithNewDataSkills(DEFAULT_SKILLS, restoreData.skills);
       setSkills(restoreDataSkills || DEFAULT_SKILLS);
@@ -420,7 +420,7 @@ const IndexPage = () => {
             handleCheckChange={handleCheckChange}
             handleDataChange={handleDataChange}
           />
-          <Support support={support} handleSupportChange={handleSupportChange} />
+          {/* <Support support={support} handleSupportChange={handleSupportChange} /> */}
           <div className="section">
             {(data.visitorsBadge ||
               data.githubProfileTrophy ||

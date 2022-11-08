@@ -15,7 +15,7 @@ export default function Template({
       <Helmet>
         <meta charSet="utf-8" />
         <title>{frontmatter.title}</title>
-        <link rel="canonical" href={`https://rahuldkjain.github.io/gh-profile-readme-generator`} />
+        <link rel="canonical" href={`https://github.com/SahilKhobrekar`} />
       </Helmet>
       <div className="m-4 sm:p-10">
         <div className="blog-post">

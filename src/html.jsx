@@ -11,7 +11,7 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {headComponents}
-        <script
+        {/* <script
           data-name="BMC-Widget"
           src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
           data-id="rahuldkjain"
@@ -21,7 +21,7 @@ export default function HTML(props) {
           data-position=""
           data-x_margin="18"
           data-y_margin="18"
-        />
+        /> */}
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}

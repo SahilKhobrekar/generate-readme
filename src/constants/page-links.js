@@ -2,6 +2,6 @@ const links = {
   home: '/',
   about: '/about',
   addons: '/addons',
-  support: '/support',
+  // support: '/support',
 };
 export default links;
